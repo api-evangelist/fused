@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/fused/main/json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json",
+  "title": "PostSessionTokenByAccessTokenCanvastokenResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostSessionTokenByAccessTokenCanvastokenResponse",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "The canvas token the session token is bound to"
+    },
+    "session_token": {
+      "type": "string",
+      "description": "The session token to pass as fused_session_token"
+    },
+    "expires_at": {
+      "type": "string",
+      "description": "Expiry timestamp"
+    }
+  }
+}

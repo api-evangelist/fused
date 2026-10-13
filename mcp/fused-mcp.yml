@@ -1,0 +1,179 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/fused-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.fused.io, www.fused.io, docs.fused.io; verdict absent. Candidate
+  tools below are derived from the 33 operation(s) in the provider's own OpenAPI (33 listed); they describe what a server WOULD expose, not one
+  that exists.
+tools:
+- name: get_fc_your_canvas_token_my_udf_png
+  operationId: get_fc_YOUR_CANVAS_TOKEN_my_udf_png
+  method: GET
+  path: /fc_YOUR_CANVAS_TOKEN/my_udf.png
+  description: GET /fc_YOUR_CANVAS_TOKEN/my_udf.png
+- name: delete_files_delete
+  operationId: delete_files_delete
+  method: DELETE
+  path: /files/delete
+  description: Delete a file or prefix
+- name: get_files_fileid
+  operationId: get_files_fileid
+  method: GET
+  path: /files/{fileid}
+  description: Read a file
+- name: post_files_fileid
+  operationId: post_files_fileid
+  method: POST
+  path: /files/{fileid}
+  description: Resolve a path
+- name: put_files_fileid
+  operationId: put_files_fileid
+  method: PUT
+  path: /files/{fileid}
+  description: Upload a file
+- name: get_secrets_self_user
+  operationId: get_secrets_self_user
+  method: GET
+  path: /secrets/self/user
+  description: List secret keys
+- name: post_secrets_self_user
+  operationId: post_secrets_self_user
+  method: POST
+  path: /secrets/self/user
+  description: Create a secret
+- name: delete_secrets_self_user_key
+  operationId: delete_secrets_self_user_key
+  method: DELETE
+  path: /secrets/self/user/{key}
+  description: Delete a secret
+- name: get_secrets_self_user_key
+  operationId: get_secrets_self_user_key
+  method: GET
+  path: /secrets/self/user/{key}
+  description: Get a secret value
+- name: put_secrets_self_user_key
+  operationId: put_secrets_self_user_key
+  method: PUT
+  path: /secrets/self/user/{key}
+  description: Create or update a secret
+- name: get_server_v1_execution_env_self
+  operationId: get_server_v1_execution_env_self
+  method: GET
+  path: /server/v1/execution-env/self
+  description: GET /server/v1/execution-env/self
+- name: put_server_v1_files_fileid
+  operationId: put_server_v1_files_fileid
+  method: PUT
+  path: /server/v1/files/{fileid}
+  description: PUT /server/v1/files/upload
+- name: post_server_v1_realtime_yourclientid
+  operationId: post_server_v1_realtime_yourclientid
+  method: POST
+  path: /server/v1/realtime/{yourclientid}
+  description: POST /server/v1/realtime/{yourClientId}
+- name: get_server_v1_secrets_self_user
+  operationId: get_server_v1_secrets_self_user
+  method: GET
+  path: /server/v1/secrets/self/user
+  description: List secret keys
+- name: post_server_v1_secrets_self_user
+  operationId: post_server_v1_secrets_self_user
+  method: POST
+  path: /server/v1/secrets/self/user
+  description: POST /server/v1/secrets/self/user
+- name: get_server_v1_secrets_self_user_openai_api_key
+  operationId: get_server_v1_secrets_self_user_openaiApiKey
+  method: GET
+  path: /server/v1/secrets/self/user/{openaiApiKey}
+  description: Get a secret value
+- name: put_server_v1_secrets_self_user_openaiapikey
+  operationId: put_server_v1_secrets_self_user_openaiapikey
+  method: PUT
+  path: /server/v1/secrets/self/user/{openaiapikey}
+  description: PUT /server/v1/secrets/self/user/{openaiApiKey}
+- name: post_server_v1_session_token_by_access_token_fc_abcdef123456
+  operationId: post_server_v1_session_token_by_access_token_fc_abcdef1234567890
+  method: POST
+  path: /server/v1/session-token/by-access-token/fc_abcdef1234567890
+  description: POST /server/v1/session-token/by-access-token/fc_abcdef1234567890
+- name: post_server_v1_user_self
+  operationId: post_server_v1_user_self
+  method: POST
+  path: /server/v1/user/self
+  description: POST /server/v1/user/self
+- name: delete_session_token_by_access_token_canvas_token
+  operationId: delete_session_token_by_access_token_canvasToken
+  method: DELETE
+  path: /session-token/by-access-token/{canvasToken}
+  description: Revoke session tokens
+- name: post_session_token_by_access_token_canvas_token
+  operationId: post_session_token_by_access_token_canvasToken
+  method: POST
+  path: /session-token/by-access-token/{canvasToken}
+  description: Mint a session token
+- name: delete_udf_by_id_udf_id
+  operationId: delete_udf_by_id_udfId
+  method: DELETE
+  path: /udf/by-id/{udfId}
+  description: Delete a UDF
+- name: get_udf_by_id_udf_id
+  operationId: get_udf_by_id_udfId
+  method: GET
+  path: /udf/by-id/{udfId}
+  description: Get a UDF
+- name: post_udf_by_id_udf_id
+  operationId: post_udf_by_id_udfId
+  method: POST
+  path: /udf/by-id/{udfId}
+  description: Update a UDF
+- name: get_udf_by_user_email_email_by_collection_canvas_name_by_slu
+  operationId: get_udf_by_user_email_email_by_collection_canvasName_by_slug_slug
+  method: GET
+  path: /udf/by-user-email/{email}/by-collection/{canvasName}/by-slug/{slug}
+  description: By name
+- name: get_udf_by_user_handle_handle_by_collection_canvas_name_by_s
+  operationId: get_udf_by_user_handle_handle_by_collection_canvasName_by_slug_slug
+  method: GET
+  path: /udf/by-user-handle/{handle}/by-collection/{canvasName}/by-slug/{slug}
+  description: By name
+- name: get_udf_exec_env_self
+  operationId: get_udf_exec_env_self
+  method: GET
+  path: /udf/exec-env/self
+  description: List your team's UDFs
+- name: get_udf_exec_env_self_by_collection_canvas_name_by_slug_slug
+  operationId: get_udf_exec_env_self_by_collection_canvasName_by_slug_slug
+  method: GET
+  path: /udf/exec-env/self/by-collection/{canvasName}/by-slug/{slug}
+  description: By name
+- name: post_udf_new
+  operationId: post_udf_new
+  method: POST
+  path: /udf/new
+  description: Create a UDF
+- name: get_udf_self
+  operationId: get_udf_self
+  method: GET
+  path: /udf/self
+  description: List your UDFs
+- name: get_udf_shared_by_token_token
+  operationId: get_udf_shared_by_token_token
+  method: GET
+  path: /udf/shared/by-token/{token}
+  description: By shared token
+- name: get_user_self
+  operationId: get_user_self
+  method: GET
+  path: /user/self
+  description: Get the signed-in user
+- name: post_user_self
+  operationId: post_user_self
+  method: POST
+  path: /user/self
+  description: Update the signed-in user

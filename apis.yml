@@ -1,23 +1,135 @@
 aid: fused
+
 name: Fused
-description: 'Fused is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/feIc3iYdxE3MTKtAmkh9qGbbz4.png
+
+description: Fused provides an analytics platform that combines AI, real‑time Python execution, and data context to enable teams to unlock insights
+  instantly. Users can build workflows, connect to any data source, and deploy applications with end‑to‑end Python UDFs, leveraging built‑in data‑aware
+  AI. The platform offers a low‑code environment, extensive integrations, and collaborative tools such as a Discord community and extensive documentation
+  to accelerate data‑driven projects.
+
 url: https://raw.githubusercontent.com/api-evangelist/fused/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Analytics
+- AI
+- DataPlatform
+- Python
+- LowCode
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/fused-plans-pricing.yml
+- type: Spectral
+  url: rules/fused-rules.yml
+- type: JSONLD
+  url: json-ld/fused-context.jsonld
+- type: Vocabulary
+  url: vocabulary/fused-vocabulary.yml
+- type: DataModel
+  url: data-model/fused-data-model.yml
+- type: CLI
+  url: cli/fused-cli.yml
+- type: ChangeLog
+  url: changelog/fused-changelog.yml
+- type: Authentication
+  url: authentication/fused-authentication.yml
+- type: Conformance
+  url: conformance/fused-conformance.yml
+- type: LLMsTxt
+  url: llms/fused-llms.txt
+- type: Hosts
+  url: hosts/fused-hosts.yml
+- type: Vendors
+  url: vendors/fused-vendors.yml
+- type: SDKs
+  url: packages/fused-packages.yml
+- type: Packages
+  url: packages/fused-packages.yml
+- type: ChangeLog
+  url: https://docs.fused.io/python-sdk/changelog/
+- type: Blog
+  url: https://www.fused.io/blog
+- type: DomainSecurity
+  url: security/fused-domain-security.yml
 - type: Website
   url: https://www.fused.io/
+- type: Documentation
+  url: https://docs.fused.io/
+- type: GettingStarted
+  url: https://docs.fused.io/guide/getting-started/first-udf-basics
+- type: Pricing
+  url: https://www.fused.io/pricing
+- type: TermsOfService
+  url: https://www.fused.io/terms
+- type: PrivacyPolicy
+  url: https://www.fused.io/privacy
+
+apis:
+- name: Fused API
+  description: Fused provides AI‑powered data integration and workflow automation platform.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  baseURL: null
+  properties: []
+  aid: fused:fused-api-2
+- aid: fused:fused-api
+  name: Fused API
+  description: 'Fused API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
+
+    the provider''s own document.'
+  humanURL: https://docs.fused.io/guide/data-input-outputs/export-api/tokens-endpoints
+  baseURL: https://www.fused.io
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/fused-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL spec found on discovered hosts.
+  evidence:
+  - url: https://api.fused.io/openapi.json
+    status: 404
+  - url: https://api.fused.io/openapi.yaml
+    status: 404
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 24
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

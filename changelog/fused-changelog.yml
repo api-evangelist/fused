@@ -1,0 +1,57 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.fused.io/python-sdk/changelog/
+sources:
+- https://docs.fused.io/python-sdk/changelog/
+- https://docs.fused.io/workbench/versions/
+entries:
+- breaking: false
+  highlights:
+  - The experimental fused-map widget sidebar now lets you add, duplicate, delete, and rename layers, pick palettes and color steps, and save
+    edits straight into the widget config, with full undo/redo in the code editor.
+  - The map also detects the layer type from your UDF result, so you can show a map for any UDF, including single-image rasters.
+  date: '2026-10-06'
+- breaking: false
+  highlights:
+  - 'The experimental fused-map widget gets a major upgrade:'
+  - A configuration sidebar to tweak the map without editing code
+  - Direct URI of your source, no UDF required
+  - Auto-fit to your data
+  date: '2026-09-30'
+- breaking: false
+  highlights:
+  - Canvases opened from fused-render now embed a fully authenticated Workbench editor directly in the app instead of a separate browser tab.
+  date: '2026-08-18'
+- breaking: false
+  highlights:
+  - 'Fixed: fused.cache now surfaces the real error to concurrent waiters instead of a generic failure'
+  - 'Fixed: requesting a missing collection now returns a clear HTTP error instead of a server error'
+  date: '2026-07-21'
+- breaking: false
+  highlights:
+  - UDF .json files now support JSON5, so you can use comments and trailing commas in your UDF configuration
+  - 'Canvas : App nodes now show a clear status message instead of a generic "Running UDF"'
+  date: '2026-06-29'
+- breaking: false
+  highlights:
+  - The fused CLI gains fused checkpoint create, list, and restore, so you can snapshot your work from the terminal and roll back to an earlier
+    state at any time.
+  - fused run now works against shared canvases, so you can execute a teammate's shared canvas directly from the terminal without copying it first.
+  date: '2026-06-24'
+- breaking: false
+  highlights:
+  - The Canvas now exposes an MCP server so AI tools like Claude and Cursor can connect directly to your canvas.
+  - Add your Anthropic API key under team integrations to call Claude models inside UDFs via fused.api.anthropic_connect().
+  - Widgets can now reference UDF outputs directly using template syntax.
+  date: '2026-05-19'
+- breaking: false
+  highlights:
+  - Widgets gain a transformer component for custom JavaScript logic, per-widget background colors, an AI chat preset (beta), and schema linting
+    with autocompletion in the JSON UI editor.
+  - Navigating the Workbench feels smoother — back and forward buttons let you move through canvas history, node descriptions now show up right
+    on the canvas, and omnisearch got keyboard shortcuts.
+  date: '2026-05-14'
+current_version: v2.9.1
+note: Versioning scheme follows the pattern v{major}.{minor}.{patch}.
+docs: https://docs.fused.io/python-sdk/changelog/

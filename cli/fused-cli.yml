@@ -1,0 +1,35 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.fused.io/guide/working-with-udfs/udf-best-practices/ai-coding-tools/
+sources:
+- https://docs.fused.io/guide/working-with-udfs/udf-best-practices/ai-coding-tools/
+- https://docs.fused.io/python-sdk/changelog/
+- https://docs.fused.io/python-sdk/overview/
+- https://docs.fused.io/python-sdk/top-level-functions/
+install:
+- method: pip
+  command: pip install --upgrade fused
+commands:
+- group: canvas
+  commands:
+  - fused canvas pull <canvas_name>
+  - fused canvas push <canvas_dir>
+- group: run
+  commands:
+  - fused run
+- group: checkpoint
+  commands:
+  - fused checkpoint create
+  - fused checkpoint list
+  - fused checkpoint restore
+- group: udf
+  commands:
+  - fused udf search
+  - fused udf schema
+- group: login
+  commands:
+  - fused login
+  - fused logout
+binary: fused
+docs: https://docs.fused.io/guide/working-with-udfs/udf-best-practices/ai-coding-tools/

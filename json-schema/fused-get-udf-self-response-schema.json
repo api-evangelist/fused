@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/fused/main/json-schema/fused-get-udf-self-response-schema.json",
+  "title": "GetUdfSelfResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetUdfSelfResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UDF id"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe name, unique within a canvas"
+    },
+    "udf_body": {
+      "type": "string",
+      "description": "The UDF source and metadata"
+    },
+    "collection_id": {
+      "type": "string",
+      "description": "Canvas the UDF belongs to"
+    },
+    "collection_name": {
+      "type": "string",
+      "description": "Canvas name"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "description": "Whether the UDF is shown on its canvas"
+    },
+    "position": {
+      "type": "integer",
+      "description": "Ordering on the canvas"
+    },
+    "udf_body_hash": {
+      "type": "string",
+      "description": "Hash of udf_body , for change detection"
+    },
+    "last_updated": {
+      "type": "string",
+      "description": "Last modification timestamp"
+    },
+    "owning_user": {
+      "type": "object",
+      "description": "Owner summary"
+    }
+  }
+}

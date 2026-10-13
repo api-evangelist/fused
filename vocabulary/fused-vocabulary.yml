@@ -1,0 +1,161 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/fused-openapi-generated.yml
+vocabulary:
+  name: Fused Domain Vocabulary
+  description: 'Terms declared by Fused''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-13'
+  terms:
+  - term: DeleteFilesDeleteResponse
+    definition: 'Object declared by the contract with fields: result.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/DeleteFilesDeleteResponse
+  - term: GetFilesFileidResponse
+    definition: 'Object declared by the contract with fields: redirect.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetFilesFileidResponse
+  - term: PostFilesFileidResponse
+    definition: 'Object declared by the contract with fields: url.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostFilesFileidResponse
+  - term: PutFilesFileidRequest
+    definition: 'Object declared by the contract with fields: body.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutFilesFileidRequest
+  - term: PutFilesFileidResponse
+    definition: 'Object declared by the contract with fields: url.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutFilesFileidResponse
+  - term: GetSecretsSelfUserResponse
+    definition: 'Object declared by the contract with fields: secrets.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetSecretsSelfUserResponse
+  - term: PostSecretsSelfUserRequest
+    definition: 'Object declared by the contract with fields: key, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostSecretsSelfUserRequest
+  - term: PostSecretsSelfUserResponse
+    definition: 'Object declared by the contract with fields: key.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostSecretsSelfUserResponse
+  - term: DeleteSecretsSelfUserKeyResponse
+    definition: 'Object declared by the contract with fields: ok.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/DeleteSecretsSelfUserKeyResponse
+  - term: GetSecretsSelfUserKeyResponse
+    definition: 'Object declared by the contract with fields: key, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetSecretsSelfUserKeyResponse
+  - term: PutSecretsSelfUserKeyRequest
+    definition: 'Object declared by the contract with fields: value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutSecretsSelfUserKeyRequest
+  - term: PutSecretsSelfUserKeyResponse
+    definition: 'Object declared by the contract with fields: key.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutSecretsSelfUserKeyResponse
+  - term: PostServerV1RealtimeYourclientidRequest
+    definition: 'Object declared by the contract with fields: step_config, dtype_in, format, cache.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostServerV1RealtimeYourclientidRequest
+  - term: GetServerV1SecretsSelfUserResponse
+    definition: 'Object declared by the contract with fields: secrets.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetServerV1SecretsSelfUserResponse
+  - term: PostServerV1SecretsSelfUserRequest
+    definition: 'Object declared by the contract with fields: key, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostServerV1SecretsSelfUserRequest
+  - term: PostServerV1SecretsSelfUserResponse
+    definition: 'Object declared by the contract with fields: key.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostServerV1SecretsSelfUserResponse
+  - term: GetServerV1SecretsSelfUserOpenaiapikeyResponse
+    definition: 'Object declared by the contract with fields: key, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetServerV1SecretsSelfUserOpenaiapikeyResponse
+  - term: PutServerV1SecretsSelfUserOpenaiapikeyRequest
+    definition: 'Object declared by the contract with fields: value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutServerV1SecretsSelfUserOpenaiapikeyRequest
+  - term: PutServerV1SecretsSelfUserOpenaiapikeyResponse
+    definition: 'Object declared by the contract with fields: key.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PutServerV1SecretsSelfUserOpenaiapikeyResponse
+  - term: PostServerV1SessionTokenByAccessTokenFcAbcdef1234567890Reque
+    definition: 'Object declared by the contract with fields: ttl.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostServerV1SessionTokenByAccessTokenFcAbcdef1234567890Reque
+  - term: PostServerV1UserSelfRequest
+    definition: 'Object declared by the contract with fields: handle.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostServerV1UserSelfRequest
+  - term: PostSessionTokenByAccessTokenCanvastokenRequest
+    definition: 'Object declared by the contract with fields: ttl.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostSessionTokenByAccessTokenCanvastokenRequest
+  - term: PostSessionTokenByAccessTokenCanvastokenResponse
+    definition: 'Object declared by the contract with fields: token, session_token, expires_at.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostSessionTokenByAccessTokenCanvastokenResponse
+  - term: PostUdfByIdUdfidRequest
+    definition: 'Object declared by the contract with fields: slug, udf_body, collection_id.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostUdfByIdUdfidRequest
+  - term: PostUdfNewRequest
+    definition: 'Object declared by the contract with fields: slug, udf_body, udf_type, collection_id, create_shared_token, shared_token_access_scope.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostUdfNewRequest
+  - term: PostUdfNewResponse
+    definition: 'Object declared by the contract with fields: shared_token.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostUdfNewResponse
+  - term: GetUdfSelfResponse
+    definition: 'Object declared by the contract with fields: id, slug, udf_body, collection_id, collection_name, is_visible, position, udf_body_hash,
+      last_updated, owning_user.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetUdfSelfResponse
+  - term: GetUserSelfResponse
+    definition: 'Object declared by the contract with fields: id, name, email, handle, execution_environment_id, signup_date, handle_last_changed.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetUserSelfResponse
+  - term: PostUserSelfRequest
+    definition: 'Object declared by the contract with fields: name, handle.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostUserSelfRequest
+  - term: PostUserSelfResponse
+    definition: 'Object declared by the contract with fields: id, name, email, handle, execution_environment_id, signup_date, handle_last_changed.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/PostUserSelfResponse

@@ -1,0 +1,19 @@
+generated: '2026-10-13'
+method: searched
+source: https://docs.fused.io/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OAuth2 flows documented in https://docs.fused.io/guide/authentication/
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+- id: pagination
+  conforms: true
+  evidence: list operations take limit

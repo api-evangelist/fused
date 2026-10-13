@@ -1,0 +1,25 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.fused.io/guide/data-input-outputs/export-api/securing-shared-tokens/
+sources:
+- https://docs.fused.io/guide/data-input-outputs/export-api/securing-shared-tokens/
+- https://docs.fused.io/guide/data-input-outputs/export-api/tokens-endpoints/
+- https://docs.fused.io/rest-api/tokens/
+- https://docs.fused.io/guide/advanced-setup/dependencies/
+description: Authentication methods for Fused UDF API
+schemes:
+- type: apiKey
+  name: fused_session_token
+  evidence: Add the session token as a fused_session_token query parameter on the UDF HTTPS URL (same host and path as a normal canvas call, for
+    example https://udf.ai/fc_<CANVAS_TOKEN>/<udf_name>.json).
+  location: query
+  how_to_obtain: Mint a session token via the Fused Service Account using the POST /session-token/by-access-token/{canvas_token} endpoint.
+- type: http-bearer
+  name: Authorization
+  evidence: 'Calling UDFs with Bearer authentication requires an account''s private token . curl -XGET "https://udf.ai/fc_YOUR_CANVAS_TOKEN/my_udf.png"
+    -H "Authorization: Bearer $ACCESS_TOKEN "'
+  location: header
+  header: 'Authorization: Bearer <TOKEN>'
+  how_to_obtain: Retrieve your bearer token via the fused._auth library or your account settings.
+docs: https://docs.fused.io/guide/data-input-outputs/export-api/securing-shared-tokens/

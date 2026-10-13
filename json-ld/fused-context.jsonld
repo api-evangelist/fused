@@ -1,0 +1,189 @@
+{
+  "@context": {
+    "@vocab": "https://fused.io/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "fused": "https://fused.io/schema#",
+    "DeleteFilesDeleteResponse": "fused:DeleteFilesDeleteResponse",
+    "result": {
+      "@id": "fused:result",
+      "@type": "xsd:boolean"
+    },
+    "GetFilesFileidResponse": "fused:GetFilesFileidResponse",
+    "redirect": {
+      "@id": "fused:redirect",
+      "@type": "xsd:string"
+    },
+    "PostFilesFileidResponse": "fused:PostFilesFileidResponse",
+    "url": {
+      "@id": "fused:url",
+      "@type": "xsd:string"
+    },
+    "PutFilesFileidRequest": "fused:PutFilesFileidRequest",
+    "body": {
+      "@id": "fused:body",
+      "@type": "xsd:string"
+    },
+    "PutFilesFileidResponse": "fused:PutFilesFileidResponse",
+    "GetSecretsSelfUserResponse": "fused:GetSecretsSelfUserResponse",
+    "secrets": {
+      "@id": "fused:secrets",
+      "@container": "@list"
+    },
+    "PostSecretsSelfUserRequest": "fused:PostSecretsSelfUserRequest",
+    "key": {
+      "@id": "fused:key",
+      "@type": "xsd:string"
+    },
+    "value": {
+      "@id": "fused:value",
+      "@type": "xsd:string"
+    },
+    "PostSecretsSelfUserResponse": "fused:PostSecretsSelfUserResponse",
+    "DeleteSecretsSelfUserKeyResponse": "fused:DeleteSecretsSelfUserKeyResponse",
+    "ok": {
+      "@id": "fused:ok",
+      "@type": "xsd:boolean"
+    },
+    "GetSecretsSelfUserKeyResponse": "fused:GetSecretsSelfUserKeyResponse",
+    "PutSecretsSelfUserKeyRequest": "fused:PutSecretsSelfUserKeyRequest",
+    "PutSecretsSelfUserKeyResponse": "fused:PutSecretsSelfUserKeyResponse",
+    "PostServerV1RealtimeYourclientidRequest": "fused:PostServerV1RealtimeYourclientidRequest",
+    "step_config": {
+      "@id": "fused:step_config",
+      "@type": "xsd:string"
+    },
+    "dtype_in": {
+      "@id": "fused:dtype_in",
+      "@type": "xsd:string"
+    },
+    "format": {
+      "@id": "fused:format",
+      "@type": "xsd:string"
+    },
+    "cache": {
+      "@id": "fused:cache",
+      "@type": "xsd:boolean"
+    },
+    "GetServerV1SecretsSelfUserResponse": "fused:GetServerV1SecretsSelfUserResponse",
+    "PostServerV1SecretsSelfUserRequest": "fused:PostServerV1SecretsSelfUserRequest",
+    "PostServerV1SecretsSelfUserResponse": "fused:PostServerV1SecretsSelfUserResponse",
+    "GetServerV1SecretsSelfUserOpenaiapikeyResponse": "fused:GetServerV1SecretsSelfUserOpenaiapikeyResponse",
+    "PutServerV1SecretsSelfUserOpenaiapikeyRequest": "fused:PutServerV1SecretsSelfUserOpenaiapikeyRequest",
+    "PutServerV1SecretsSelfUserOpenaiapikeyResponse": "fused:PutServerV1SecretsSelfUserOpenaiapikeyResponse",
+    "PostServerV1SessionTokenByAccessTokenFcAbcdef1234567890Reque": "fused:PostServerV1SessionTokenByAccessTokenFcAbcdef1234567890Reque",
+    "ttl": {
+      "@id": "fused:ttl",
+      "@type": "xsd:integer"
+    },
+    "PostServerV1UserSelfRequest": "fused:PostServerV1UserSelfRequest",
+    "handle": {
+      "@id": "fused:handle",
+      "@type": "xsd:string"
+    },
+    "PostSessionTokenByAccessTokenCanvastokenRequest": "fused:PostSessionTokenByAccessTokenCanvastokenRequest",
+    "PostSessionTokenByAccessTokenCanvastokenResponse": "fused:PostSessionTokenByAccessTokenCanvastokenResponse",
+    "token": {
+      "@id": "fused:token",
+      "@type": "xsd:string"
+    },
+    "session_token": {
+      "@id": "fused:session_token",
+      "@type": "xsd:string"
+    },
+    "expires_at": {
+      "@id": "fused:expires_at",
+      "@type": "xsd:string"
+    },
+    "PostUdfByIdUdfidRequest": "fused:PostUdfByIdUdfidRequest",
+    "slug": {
+      "@id": "fused:slug",
+      "@type": "xsd:string"
+    },
+    "udf_body": {
+      "@id": "fused:udf_body",
+      "@type": "xsd:string"
+    },
+    "collection_id": {
+      "@id": "fused:collection_id",
+      "@type": "xsd:string"
+    },
+    "PostUdfNewRequest": "fused:PostUdfNewRequest",
+    "udf_type": {
+      "@id": "fused:udf_type",
+      "@type": "xsd:string"
+    },
+    "create_shared_token": {
+      "@id": "fused:create_shared_token",
+      "@type": "xsd:boolean"
+    },
+    "shared_token_access_scope": {
+      "@id": "fused:shared_token_access_scope",
+      "@type": "xsd:string"
+    },
+    "PostUdfNewResponse": "fused:PostUdfNewResponse",
+    "shared_token": {
+      "@id": "fused:shared_token",
+      "@type": "xsd:string"
+    },
+    "GetUdfSelfResponse": "fused:GetUdfSelfResponse",
+    "id": {
+      "@id": "fused:id",
+      "@type": "xsd:string"
+    },
+    "collection_name": {
+      "@id": "fused:collection_name",
+      "@type": "xsd:string"
+    },
+    "is_visible": {
+      "@id": "fused:is_visible",
+      "@type": "xsd:boolean"
+    },
+    "position": {
+      "@id": "fused:position",
+      "@type": "xsd:integer"
+    },
+    "udf_body_hash": {
+      "@id": "fused:udf_body_hash",
+      "@type": "xsd:string"
+    },
+    "last_updated": {
+      "@id": "fused:last_updated",
+      "@type": "xsd:string"
+    },
+    "owning_user": {
+      "@id": "fused:owning_user"
+    },
+    "GetUserSelfResponse": "fused:GetUserSelfResponse",
+    "name": {
+      "@id": "fused:name",
+      "@type": "xsd:string"
+    },
+    "email": {
+      "@id": "fused:email",
+      "@type": "xsd:string"
+    },
+    "execution_environment_id": {
+      "@id": "fused:execution_environment_id",
+      "@type": "xsd:string"
+    },
+    "signup_date": {
+      "@id": "fused:signup_date",
+      "@type": "xsd:string"
+    },
+    "handle_last_changed": {
+      "@id": "fused:handle_last_changed",
+      "@type": "xsd:string"
+    },
+    "PostUserSelfRequest": "fused:PostUserSelfRequest",
+    "PostUserSelfResponse": "fused:PostUserSelfResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Fused API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Fused's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-13) from openapi/_ae-authored/fused-openapi-generated.yml.",
+  "dcterms:created": "2026-10-13",
+  "dcterms:source": [
+    "openapi/_ae-authored/fused-openapi-generated.yml"
+  ]
+}

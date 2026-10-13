@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/fused/main/json-schema/fused-get-user-self-response-schema.json",
+  "title": "GetUserSelfResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/fused-openapi-generated.yml#/components/schemas/GetUserSelfResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "User id"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "handle": {
+      "type": "string",
+      "description": "Public handle, used in canvas and UDF URLs"
+    },
+    "execution_environment_id": {
+      "type": "string",
+      "description": "Environment the user belongs to"
+    },
+    "signup_date": {
+      "type": "string",
+      "description": "Signup timestamp"
+    },
+    "handle_last_changed": {
+      "type": "string",
+      "description": "When the handle was last changed"
+    }
+  }
+}

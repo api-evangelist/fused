@@ -1,0 +1,131 @@
+openapi: 3.2.0
+info:
+  title: Fused User API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Fused has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 9
+    documentation: 24
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.fused.io/guide/data-input-outputs/export-api/tokens-endpoints
+  - https://docs.fused.io/rest-api/overview
+  - https://docs.fused.io/rest-api/udfs
+  - https://docs.fused.io/rest-api/files
+  - https://docs.fused.io/rest-api/tokens
+  - https://docs.fused.io/rest-api/account
+  - https://docs.fused.io/rest-api/secrets
+servers:
+- url: https://www.fused.io
+security:
+- bearer: []
+tags:
+- name: User
+paths:
+  /user/self:
+    get:
+      operationId: get_user_self
+      tags:
+      - User
+      summary: Get the signed-in user
+      x-source: https://docs.fused.io/rest-api/account
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetUserSelfResponse'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_user_self
+      tags:
+      - User
+      summary: Update the signed-in user
+      x-source: https://docs.fused.io/rest-api/account
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostUserSelfRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostUserSelfResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostUserSelfRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Display name
+        handle:
+          type: string
+          description: Public handle
+    PostUserSelfResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: User id
+        name:
+          type: string
+          description: Display name
+        email:
+          type: string
+          description: Email address
+        handle:
+          type: string
+          description: Public handle, used in canvas and UDF URLs
+        execution_environment_id:
+          type: string
+          description: Environment the user belongs to
+        signup_date:
+          type: string
+          description: Signup timestamp
+        handle_last_changed:
+          type: string
+          description: When the handle was last changed
+    GetUserSelfResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: User id
+        name:
+          type: string
+          description: Display name
+        email:
+          type: string
+          description: Email address
+        handle:
+          type: string
+          description: Public handle, used in canvas and UDF URLs
+        execution_environment_id:
+          type: string
+          description: Environment the user belongs to
+        signup_date:
+          type: string
+          description: Signup timestamp
+        handle_last_changed:
+          type: string
+          description: When the handle was last changed
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

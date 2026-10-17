@@ -93,17 +93,15 @@ apis:
   baseURL: null
   properties: []
   aid: fused:fused-api-2
-- aid: fused:fused-api
-  name: Fused API
-  description: 'Fused API as documented publicly: 33 operations. Contract generated from the documentation by API Evangelist (2026-10-13); not
-
-    the provider''s own document.'
-  humanURL: https://docs.fused.io/guide/data-input-outputs/export-api/tokens-endpoints
-  baseURL: https://www.fused.io
+- aid: fused:fused-fc-your-canvas-token-api
+  name: Fused Fc Your Canvas Token API
+  description: The Fc Your Canvas Token API from Fused — 1 operation(s) for fc your canvas token.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Fc Your Canvas Token
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/fused-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/fused-fc-your-canvas-token-api-openapi.yml
   - type: JSONSchema
     url: json-schema/fused-get-udf-self-response-schema.json
   - type: JSONSchema
@@ -116,7 +114,132 @@ apis:
     url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
   - type: JSONSchema
     url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
-
+- aid: fused:fused-files-api
+  name: Fused Files API
+  description: The Files API from Fused — 2 operation(s) for files.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-files-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+- aid: fused:fused-secrets-api
+  name: Fused Secrets API
+  description: The Secrets API from Fused — 2 operation(s) for secrets.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Secrets
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-secrets-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+- aid: fused:fused-server-api
+  name: Fused Server API
+  description: The Server API from Fused — 8 operation(s) for server.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Server
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-server-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+- aid: fused:fused-session-token-api
+  name: Fused Session Token API
+  description: The Session Token API from Fused — 1 operation(s) for session token.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Session Token
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-session-token-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+- aid: fused:fused-udf-api
+  name: Fused Udf API
+  description: The Udf API from Fused — 8 operation(s) for udf.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - Udf
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-udf-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
+- aid: fused:fused-user-api
+  name: Fused User API
+  description: The User API from Fused — 1 operation(s) for user.
+  humanURL: https://docs.fused.io/python-sdk/overview/
+  tags:
+  - User
+  properties:
+  - type: OpenAPI
+    url: openapi/fused-user-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/fused-get-udf-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-get-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-user-self-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-new-request-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-session-token-by-access-token-canvastoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/fused-post-udf-by-id-udfid-request-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

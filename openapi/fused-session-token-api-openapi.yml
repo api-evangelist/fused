@@ -1,0 +1,100 @@
+openapi: 3.2.0
+info:
+  title: Fused Session Token API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 33 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Fused has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 9
+    documentation: 24
+    pages-with-code: 6
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.fused.io/guide/data-input-outputs/export-api/tokens-endpoints
+  - https://docs.fused.io/rest-api/overview
+  - https://docs.fused.io/rest-api/udfs
+  - https://docs.fused.io/rest-api/files
+  - https://docs.fused.io/rest-api/tokens
+  - https://docs.fused.io/rest-api/account
+  - https://docs.fused.io/rest-api/secrets
+servers:
+- url: https://www.fused.io
+security:
+- bearer: []
+tags:
+- name: Session Token
+paths:
+  /session-token/by-access-token/{canvasToken}:
+    delete:
+      operationId: delete_session_token_by_access_token_canvasToken
+      tags:
+      - Session Token
+      summary: Revoke session tokens
+      x-source: https://docs.fused.io/rest-api/tokens
+      parameters:
+      - name: canvasToken
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_session_token_by_access_token_canvasToken
+      tags:
+      - Session Token
+      summary: Mint a session token
+      x-source: https://docs.fused.io/rest-api/tokens
+      parameters:
+      - name: canvasToken
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostSessionTokenByAccessTokenCanvastokenRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostSessionTokenByAccessTokenCanvastokenResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostSessionTokenByAccessTokenCanvastokenResponse:
+      type: object
+      properties:
+        token:
+          type: string
+          description: The canvas token the session token is bound to
+        session_token:
+          type: string
+          description: The session token to pass as fused_session_token
+        expires_at:
+          type: string
+          description: Expiry timestamp
+    PostSessionTokenByAccessTokenCanvastokenRequest:
+      type: object
+      properties:
+        ttl:
+          type: integer
+          description: Lifetime in seconds. Defaults to 3600; maximum 86400 (24 hours).
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

@@ -24,7 +24,18 @@ created: '2026-10-13'
 
 modified: '2026-10-13'
 
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-17
+x-docs-hosting: aws-cloudfront
 tags:
+- Company
+- Analytics
+- Artificial Intelligence
+- Data Platform
+- Python
+- Low-Code
+tags_raw:
 - Company
 - Analytics
 - AI
@@ -119,6 +130,8 @@ apis:
   description: The Files API from Fused — 2 operation(s) for files.
   humanURL: https://docs.fused.io/python-sdk/overview/
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI
@@ -161,6 +174,8 @@ apis:
   description: The Server API from Fused — 8 operation(s) for server.
   humanURL: https://docs.fused.io/python-sdk/overview/
   tags:
+  - Servers
+  tags_raw:
   - Server
   properties:
   - type: OpenAPI
@@ -203,6 +218,8 @@ apis:
   description: The Udf API from Fused — 8 operation(s) for udf.
   humanURL: https://docs.fused.io/python-sdk/overview/
   tags:
+  - UDF
+  tags_raw:
   - Udf
   properties:
   - type: OpenAPI
